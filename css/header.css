@@ -19,17 +19,34 @@ header {
 .nav_ul {
     background-color: var(--GRAY);
     display: flex;
-    gap: 2.5em;
-    padding: 8px;
+    /* gap: 2em; */
+    /*padding: 8px;
     padding-left: 1rem;
-    padding-right: 1rem;
+    padding-right: 1rem;*/
     border-radius: 50px;
 }
 
 .nav_li {
     list-style-type: none;
     cursor: pointer;
+    background-color: var(--GRAY);
+    padding: 8px 1rem;
 }
+
+.nav_li:first-child {
+    padding-left: 1.5rem;
+    border-radius: 50px 0 0 50px ;
+}
+
+.nav_li:last-child {
+    padding-right: 1.5rem;
+    border-radius: 0 50px 50px 0 ;
+}
+
+.nav_li:hover {
+    background-color: #525252;
+}
+
 
 .nav_menu {
     font-size: 1.75em;
