@@ -66,9 +66,22 @@ a {
     -webkit-text-fill-color: transparent;
 }
 
-@media screen and (orientation: portrait) {
-    html {
+@media screen and (orientation: landscape) {
+    phone {
         display: none;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    com {
+        display: none;
+    }
+
+    phone {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
     }
 }
 
